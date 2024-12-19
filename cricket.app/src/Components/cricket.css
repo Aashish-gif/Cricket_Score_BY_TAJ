@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: url('https://www.example.com/cricket-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+/* Main Container */
+.main-container {
+  text-align: center;
+  padding: 30px;
+  min-height: 100vh;
+}
+
+/* Search Bar */
+.search {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.search input {
+  width: 300px;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 25px;
+  border: 2px solid #F59E0B; /* Gold border */
+  background: linear-gradient(to right, #F59E0B, #EF4444);
+  color: #333;
+}
+
+.search input:focus {
+  outline: none;
+  border: 2px solid #F59E0B;
+  box-shadow: 0 0 5px rgba(245, 158, 11, 0.7);
+}
+
+.search button {
+  padding: 12px 20px;
+  background-color: #EF4444;
+  color: white;
+  font-size: 18px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search button:hover {
+  background-color: #D32F2F;
+}
+
+/* Heading */
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.heading p {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #F59E0B;
+}
+
+/* Container for Cards */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* Card Styles */
+.card {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card .img {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0;
+}
+
+.card .img img {
+  max-width: 90px;
+  border-radius: 50%;
+}
+
+.card .img p {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.status {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 15px;
+  color: #F59E0B;
+}
